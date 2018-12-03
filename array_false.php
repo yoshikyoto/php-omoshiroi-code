@@ -7,5 +7,5 @@ $a = [
 
 $u = array_unique($a);
 
-var_dump($u);
+var_dump($u); // => ['k1' => false]
 var_dump($u == array(false));
