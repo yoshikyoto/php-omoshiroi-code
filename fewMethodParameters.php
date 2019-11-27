@@ -5,8 +5,19 @@ function methodParameters($a, $b) {
     var_dump($b);
 }
 
+// Too many
+methodParameters("fizz", 3, 4);
+/* 引数が多くても問題なく動く
+string(4) "fizz"
+int(3)
+*/
+
 // nomally
 methodParameters("fizz", 3);
+/*
+string(4) "fizz"
+int(3)
+*/
 
 // Few parameters
 methodParameters("fizz");
