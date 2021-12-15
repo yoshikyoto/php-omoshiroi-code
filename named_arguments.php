@@ -1,23 +1,38 @@
 <?php
 
-class Student
+class Hoge
 {
-    private $name;
-    private $age;
+    public readonly ?string $status;
 
-    public function __construct(string $name, int $age)
+    public function __construct(string $status)
     {
-        $this->name = $name;
-        $this->age = $age;
+        $this->status = $status;
     }
 
-    public function getName(): string
+    public function setStatus($status)
     {
-        return $this->name;
-    }
-
-    public function getAge(): int
-    {
-        return $this->age;
+        $this->status = $status;
     }
 }
+
+$h = new Hoge('success');
+// $h->setStatus('success');
+// var_dump($h->status);
+// $h->status = 'success';
+
+//$h->status = 'failed'; 
+// $h->setStatus('failed');
+// var_dump($h->status);
+
+class Student
+{
+    public function __construct(
+        public readonly string $name,
+        public readonly int $age
+    ) {
+    }
+}
+
+$s = new Student('utakata', 17);
+var_dump($s->name);
+var_dump($s->age);
