@@ -9,3 +9,5 @@ var_dump(isset($a['hoge']));
 var_dump($a['hoge'] ?? null);
 
 var_dump($a['hoge'] ? "a" : "b");
+
+var_dump($a['hoge'] === null);
