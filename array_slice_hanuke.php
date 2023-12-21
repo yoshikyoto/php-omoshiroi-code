@@ -8,5 +8,10 @@ $a = [
 	"e",
 ];
 
+// ちょっと不思議な key になる
 var_dump($a);
-var_dump(array_slice($a, 1, 2));
+
+// PHP の Array は key とは別に順序の概念を持っており、
+// その順序ベースで slice が取られる
+var_dump(array_slice($a, 0, 2));  // => [a, b]
+var_dump(array_slice($a, 1, 2));  // => [b, c]

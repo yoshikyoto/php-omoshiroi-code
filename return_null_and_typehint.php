@@ -1,6 +1,6 @@
 <?php
 
-// return null すると当然 null が返ってくる
+// OK --------------------------------
 function returnNullWithNoTypeAnnotation() {
 	return null;
 }
