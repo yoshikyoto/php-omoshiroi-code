@@ -11,7 +11,7 @@ https://www.php.net/manual/ja/types.comparisons.php
 
 ## 空のJSON
 
-
+empty_json.php
 
 ## PHP の array
 
@@ -54,3 +54,7 @@ php empty_json.php
 cat string_array_access.php
 php string_array_access.php
 ```
+
+## DateTime::createFromformat の罠
+
+datetime_create_from_format.php
